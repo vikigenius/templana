@@ -165,12 +165,12 @@ dependencies = [
 ]
 
 [package.dev-dependencies]
-dev = [
-    { name = "pytest" },
-]
-linting = [
+lint = [
     { name = "basedpyright" },
     { name = "ruff" },
+]
+test = [
+    { name = "pytest" },
 ]
 
 [package.metadata]
@@ -180,11 +180,11 @@ requires-dist = [
 ]
 
 [package.metadata.requires-dev]
-dev = [{ name = "pytest", specifier = ">=8.3.5" }]
-linting = [
+lint = [
     { name = "basedpyright", specifier = ">=1.29.0" },
     { name = "ruff", specifier = ">=0.11.6" },
 ]
+test = [{ name = "pytest", specifier = ">=8.3.5" }]
 
 [[package]]
 name = "typing-extensions"
